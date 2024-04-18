@@ -26,7 +26,7 @@
             ]
         },
         "Radio": {
-            "Body": "<br>You turn on the radio and immediately here a news person describing the weather.<br><br><i>...terrible winds!...record breaking rainfall!...stay indoors!~-</i><br><br>You interrupt the weather announcement by turning off the car.<br>You've arrived at the house.",
+            "Body": "<br>You turn on the radio and immediately hear a news person describing the weather.<br><br><i>...terrible winds!...record breaking rainfall!...stay indoors!~-</i><br><br>You interrupt the weather announcement by turning off the car.<br>You've arrived at the house.",
             "Choices": [
                 {
                     "Text": "Leave the car",
@@ -114,7 +114,7 @@
             ]
         },
         "Basement": {
-            "Body": "<br>You enter the basement.",
+            "Body": "<br>You enter the basement.<br>After a few minutes of exploring the space, you notice that the hatch that houses the breakers for the house is ajar.<br>Looking closer at the switches you see that the Attic light has been turned off.<br>You flip the Attic switch.",
             "Choices": [
                 {
                     "Text": "Leave",
