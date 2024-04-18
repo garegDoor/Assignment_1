@@ -1,0 +1,238 @@
+{
+    "Title": "A Stormy Night",
+    "Credits": "Created by Gabe Ahrens (gahrens@ucsc.edu).",
+    "InitialLocation": "Intro",
+    "Locations": {
+        "Porch": {
+            "Body": "<br>You are standing on the porch outside the front door of the house.<br>The storm picks up in intensity as you stand there.<br>Better get inside before you catch a cold.<br>",
+            "Choices": [
+                {
+                    "Text": "Enter the house",
+                    "Target": "Living Room"
+                }
+            ]
+        },
+        "Intro": {
+            "Body": "<br>You are the only detective for small mountain town.<br>There has been a murder that you have been called upon to solve in a house that you are currently on your way to.<br>",
+            "Choices": [
+                {
+                    "Text": "Drive in silence",
+                    "Target": "Driving"
+                },
+                {
+                    "Text": "Turn on the radio",
+                    "Target": "Radio"
+                }
+            ]
+        },
+        "Radio": {
+            "Body": "<br>You turn on the radio and immediately here a news person describing the weather.<br><br><i>...terrible winds!...record breaking rainfall!...stay indoors!~-</i><br><br>You interrupt the weather announcement by turning off the car.<br>You've arrived at the house.",
+            "Choices": [
+                {
+                    "Text": "Leave the car",
+                    "Target": "Porch"
+                }
+            ]
+        },
+        "Driving": {
+            "Body": "<br>You drive the rest of the way to the house in silence thinking about what you'll say to the family members who are inside.<br>Eventually your thoughts get interrupted by turning off the car.<br>You've arrived at the house.",
+            "Choices": [
+                {
+                    "Text": "Leave the car",
+                    "Target": "Porch"
+                }
+            ]
+        },
+        "Living Room": {
+            "Body": "<br>You are standing in the living room of the house.<br>In the center of the room on the coffee table is the unmistakable silhoutte of a body covered in a cloth.<br>From your debriefing you infer that this is the dead husband and father.<br>Spread out throughout the room, are four people:<br><i>The Wife, The Son, The Daughter, The Neighbor</i>.<br><i>They are clearly distraught, best to locate evidence and bring closure to this case as quickly as possible.</i>",
+            "Choices": [
+                {
+                    "Text": "The Body",
+                    "Target": "Husband"
+                },
+                {
+                    "Text": "The Kitchen",
+                    "Target": "Kitchen"
+                },
+                {
+                    "Text": "The Bathroom",
+                    "Target": "Bathroom"
+                },
+                {
+                    "Text": "The Basement",
+                    "Target": "Basement",
+                    "isLocked": true,
+                    "lightSwitches": true
+                },
+                {
+                    "Text": "The Stairs",
+                    "Target": "Upstairs"
+                },
+                {
+                    "Text": "Make an arrest",
+                    "Target": "Arresting"
+                }
+            ]
+        },
+        "Arresting": {
+            "Body": "<br>Pick carefully who you will be arresting:",
+            "Choices": [
+                {
+                    "Text": "The Wife",
+                    "Target": "Arrest Wife"
+                },
+                {
+                    "Text": "The Son",
+                    "Target": "Arrest Son"
+                },
+                {
+                    "Text": "The Daughter",
+                    "Target": "Arrest Daughter"
+                },
+                {
+                    "Text": "The Neighbor",
+                    "Target": "Arrest Neighbor"
+                }
+            ]
+        },
+        "Husband": {
+            "Body": "<br>You carefully lift the cloth and inspect the body of the now deceased husband.<br>It is very obvious the cause of death is a large stab wound to the back of the neck.",
+            "Choices": [
+                {
+                    "Text": "Cover the body with cloth.",
+                    "Target": "Living Room"
+                }
+            ]
+        },
+        "Kitchen": {
+            "Body": "<br>The kitchen is a small room with a counter in the middle.<br>It feels like every kitchen you've seen, but as you make your way around the countertop, you notice something strange.<br>What seems like it would have been the largest knife in the knife block, is instead just an empty slot.",
+            "Choices": [
+                {
+                    "Text": "Leave the kitchen",
+                    "Target": "Living Room"
+                }
+            ]
+        },
+        "Basement": {
+            "Body": "<br>You enter the basement.",
+            "Choices": [
+                {
+                    "Text": "Leave",
+                    "Target": "Living Room"
+                }
+            ]
+        },
+        "Upstairs": {
+            "Body": "<br>You stand in the hall at the top of the steps.<br>You can see multiple doors and a hatch at the end of the hall, leading to what you assume is the attic.",
+            "Choices": [
+                {
+                    "Text": "The Stairs",
+                    "Target": "Living Room"
+                },
+                {
+                    "Text": "The Attic",
+                    "Target": "Attic",
+                    "isDark": true
+                },
+                {
+                    "Text": "Master Bedroom",
+                    "Target": "Master Bedroom",
+                    "keyRoom": true
+                },
+                {
+                    "Text": "The Son's Bedroom",
+                    "Target": "Son's Bedroom"
+                },
+                {
+                    "Text": "The Daughter's Bedroom",
+                    "Target": "Daughter's Bedroom"
+                }
+            ]
+        },
+        "Attic": {
+            "Body": "<br>You enter the attic.<br>There is a small light dangling from the ceiling providing just enough light to see around in the cramped room.<br>As your eyes start to adjust, you see something shiny sitting on the ground in front of you.<br>You bend down to get a closer look and realize that it is a blood covered kitchen knife.<br>This is obviously the murder weapon.<br>You decide it is best not to pick it up as that may contaminate it as evidence.<br><i>You did it,</i> you think to yourself.<br>You've found the most crucial piece of evidence towards solving this case.<br>You must be able to deduce from what you have seen so far who the culprit is.<br>You begin thinking back through what you have seen as you leave the attic.",
+            "Choices": [
+                {
+                    "Text": "Leave",
+                    "Target": "Upstairs"
+                }
+            ]
+        },
+        "Bathroom": {
+            "Body": "<br>You enter the bathroom.<br>You spend a few minutes looking for anything out of the ordinary, but find nothing.",
+            "Choices": [
+                {
+                    "Text": "Leave",
+                    "Target": "Living Room"
+                }
+            ]
+        },
+        "Son's Bedroom": {
+            "Body": "<br>You enter the son's bedroom.<br>You spend a few minutes looking for anything out of the ordinary, but find nothing.",
+            "Choices": [
+                {
+                    "Text": "Leave",
+                    "Target": "Upstairs"
+                }
+            ]
+        },
+        "Daughter's Bedroom": {
+            "Body": "<br>You enter the daughter's bedroom.<br>You spend a few minutes looking for anything out of the ordinary, but find nothing.",
+            "Choices": [
+                {
+                    "Text": "Leave",
+                    "Target": "Upstairs"
+                }
+            ]
+        },
+        "Master Bedroom": {
+            "Body": "<br>You enter the master bedroom.<br>You spend a few minutes looking for anything out of the ordinary.<br>Eventually you get to inspecting the bed.<br>You decide to be extra thorough and lift the pillows.<br>Underneath is a shiny golden key with the word 'Basement' pressed into it.<br><i>What an odd place for this key.</i> You remark as you slide it into your pocket for safekeeping.",
+            "Choices": [
+                {
+                    "Text": "Leave",
+                    "Target": "Upstairs"
+                }
+            ]
+        },
+        "Arrest Wife": {
+            "Body": "<br>After carefully considering the suspects you decide it must have been the Wife.<br>You inform everyone of this as you start reading them their rights and handcuffing them.",
+            "Choices": [
+                {
+                    "Text": "Take them to the car",
+                    "Target": "Ending"
+                }
+            ]
+        },
+        "Arrest Son": {
+            "Body": "<br>After carefully considering the suspects you decide it must have been the Son.<br>You inform everyone of this as you start reading them their rights and handcuffing them.",
+            "Choices": [
+                {
+                    "Text": "Take them to the car",
+                    "Target": "Ending"
+                }
+            ]
+        },
+        "Arrest Daughter": {
+            "Body": "<br>After carefully considering the suspects you decide it must have been the Daughter.<br>You inform everyone of this as you start reading them their rights and handcuffing them.",
+            "Choices": [
+                {
+                    "Text": "Take them to the car",
+                    "Target": "Ending"
+                }
+            ]
+        },
+        "Arrest Neighbor": {
+            "Body": "<br>After carefully considering the suspects you decide it must have been the Neighbor.<br>You inform everyone of this as you start reading them their rights and handcuffing them.<br>",
+            "Choices": [
+                {
+                    "Text": "Take them to the car",
+                    "Target": "Ending"
+                }
+            ]
+        },
+        "Ending": {
+            "Body": "<br>You take them outside into the pouring rain and force them into the back seat of the car.<br>As you are doing this they are ferverently claiming innocence as they begin to choke up and you think you see a tear start to roll down their cheek as they grapple with the weight of what is happening.<br>You get into the drivers seat, and as you buckle yourself in, you look back at everyone with sad faces standing on the porch in the rain together.<br>As you start the car and begin to back out of the driveway, you think about how it all played out.<br>You pull onto the road and begin to accelerate contemplating whether there was any way you missed some detail that would have lead you to a different conclusion.<br>You can't be sure.<br>But one thing is for certain.<br>This is going to be a lot of paperwork.<br><br><i>THE END</i>",
+            "Choices": null
+        }
+    }
+}
